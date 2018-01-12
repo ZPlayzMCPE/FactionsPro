@@ -1126,13 +1126,13 @@ class FactionCommands {
                         $message = $array["message"];
                         $leader = $this->plugin->getLeader($faction);
                         $numPlayers = $this->plugin->getNumberOfPlayers($faction);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "-------INFORMATION-------" . TextFormat::RESET);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "|[Faction]| : " . TextFormat::GREEN . "$faction" . TextFormat::RESET);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "|(Leader)| : " . TextFormat::YELLOW . "$leader" . TextFormat::RESET);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "|^Players^| : " . TextFormat::LIGHT_PURPLE . "$numPlayers" . TextFormat::RESET);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "|&Strength&| : " . TextFormat::RED . "$power" . " STR" . TextFormat::RESET);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "|*Description*| : " . TextFormat::AQUA . TextFormat::UNDERLINE . "$message" . TextFormat::RESET);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "-------INFORMATION-------" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::AQUA . TextFormat::ITALIC . "-------Social Factions-------" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::RED . TextFormat::ITALIC . "|[Faction]| : " . TextFormat::BLUE . "$faction" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::RED . TextFormat::ITALIC . "|(Leader)| : " . TextFormat::GOLD . "$leader" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::RED . TextFormat::ITALIC . "|^Players^| : " . TextFormat::LIGHT_PURPLE . "$numPlayers" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::RED . TextFormat::ITALIC . "|&Strength&| : " . TextFormat::RED . "$power" . " STR" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::RED . TextFormat::ITALIC . "|*Description*| : " . TextFormat::AQUA . TextFormat::UNDERLINE . "$message" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::AQUA . TextFormat::ITALIC . "-------Social Factions-------" . TextFormat::RESET);
                     } else {
                         if (!$this->plugin->isInFaction($playerName)) {
                             $sender->sendMessage($this->plugin->formatMessage("You must be in a faction to use this!"));
@@ -1145,13 +1145,13 @@ class FactionCommands {
                         $message = $array["message"];
                         $leader = $this->plugin->getLeader($faction);
                         $numPlayers = $this->plugin->getNumberOfPlayers($faction);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "-------INFORMATION-------" . TextFormat::RESET);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "|[Faction]| : " . TextFormat::GREEN . "$faction" . TextFormat::RESET);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "|(Leader)| : " . TextFormat::YELLOW . "$leader" . TextFormat::RESET);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "|^Players^| : " . TextFormat::LIGHT_PURPLE . "$numPlayers" . TextFormat::RESET);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "|&Strength&| : " . TextFormat::RED . "$power" . " STR" . TextFormat::RESET);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "|*Description*| : " . TextFormat::AQUA . TextFormat::UNDERLINE . "$message" . TextFormat::RESET);
-                        $sender->sendMessage(TextFormat::GOLD . TextFormat::ITALIC . "-------INFORMATION-------" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::AQUA . TextFormat::ITALIC . "-------Social Factions-------" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::RED . TextFormat::ITALIC . "|[Faction]| : " . TextFormat::BLUE . "$faction" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::RED . TextFormat::ITALIC . "|(Leader)| : " . TextFormat::GOLD . "$leader" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::RED . TextFormat::ITALIC . "|^Players^| : " . TextFormat::LIGHT_PURPLE . "$numPlayers" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::RED . TextFormat::ITALIC . "|&Strength&| : " . TextFormat::RED . "$power" . " STR" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::RED . TextFormat::ITALIC . "|*Description*| : " . TextFormat::AQUA . TextFormat::UNDERLINE . "$message" . TextFormat::RESET);
+                        $sender->sendMessage(TextFormat::AQUA . TextFormat::ITALIC . "-------Social Factions-------" . TextFormat::RESET);
                     }
                     return true;
                 }
