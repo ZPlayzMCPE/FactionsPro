@@ -1061,8 +1061,8 @@ class FactionCommands {
                     /////////////////////////////// ABOUT ///////////////////////////////
 
                     if (strtolower($args[0] == 'about')) {
-                        $sender->sendMessage(TextFormat::GREEN . "[ORIGINAL] FactionsPro v1.3.2 by " . TextFormat::BOLD . "Tethered_");
-                        $sender->sendMessage(TextFormat::GOLD . "[MODDED] This version by MPE and " . TextFormat::BOLD . "Awzaw");
+                        $sender->sendMessage(TextFormat::AQUA . "[SocialPvP] Factions v1.4.3 by " . TextFormat::BOLD . "BlindSakvas");
+                        $sender->sendMessage(TextFormat::GREEN . "[SocialPvP] This version by BlindSalvas and " . TextFormat::BOLD . "DaPigGuy");
                     }
                     ////////////////////////////// CHAT ////////////////////////////////
                     if (strtolower($args[0]) == "chat" or strtolower($args[0]) == "c") {
