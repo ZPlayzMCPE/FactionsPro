@@ -1,3 +1,3 @@
-# FactionsPro
+# SocialFactions
 
-by Tethered, modified by Awzaw
+A Faction Plugin For Your Server! Only Updating And Fixing Bugs Here!
