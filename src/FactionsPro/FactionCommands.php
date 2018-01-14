@@ -1110,6 +1110,22 @@ class FactionCommands {
                         }
                     }
 
+   
+                /////////////////////////////// SocialFactions Map ////////////////////////////////
+					// Coupon for compass: G1wEmEde0mp455
+					if(strtolower($args[0] == "map")) {
+                        if(!isset($args[1])) {
+					    $size = 1;
+						$map = $this->getMap($sender, self::MAP_WIDTH, self::MAP_HEIGHT, $sender->getYaw(), $size);
+						foreach($map as $line) {
+				        $sender->sendMessage($line);
+                          
+						}
+						return true;
+					    }
+                    }
+                           
+               
                 /////////////////////////////// INFO ///////////////////////////////
 
                 if (strtolower($args[0]) == 'info') {
